@@ -1,0 +1,22 @@
+env:
+  global:
+  - INSTALL_DIR="sfizz-${TRAVIS_BRANCH}-${TRAVIS_OS_NAME}-${TRAVIS_CPU_ARCH}"
+
+jobs:
+  include:
+  - os:   linux
+    arch: amd64
+    dist: bionic
+
+  - os:   linux
+    arch: arm64
+    dist: bionic
+
+script:
+- bash ${TRAVIS_BUILD_DIR}/script.sh
+
+deploy:
+  provider:     releases
+  skip_cleanup: true
+  file:         "${INSTALL_DIR}.tar.gz"
+    repo: ${TRAVIS_REPO_SLUG}
