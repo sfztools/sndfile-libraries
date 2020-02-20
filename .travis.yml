@@ -15,9 +15,3 @@ jobs:
 
 script:
 - bash ${TRAVIS_BUILD_DIR}/script.sh
-
-deploy:
-  provider:     releases
-  skip_cleanup: true
-  file:         "${INSTALL_DIR}.tar.gz"
-    repo: ${TRAVIS_REPO_SLUG}
