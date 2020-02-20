@@ -30,3 +30,6 @@ CFLAGS=$flags CXXFLAGS=$flags PKG_CONFIG_LIBDIR=$prefix/lib/pkgconfig ./configur
 make -j$(nproc)
 make install
 popd
+
+tar -zcvf "${INSTALL_DIR}.tar.gz" $prefix
+mv "${INSTALL_DIR}.tar.gz" ${TRAVIS_BUILD_DIR}
