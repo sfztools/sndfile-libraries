@@ -7,10 +7,23 @@ jobs:
   - os: linux
     arch: amd64
     dist: bionic
+    addons:
+      apt:
+        sources:
+        - sourceline: 'deb-src http://archive.ubuntu.com/ubuntu bionic main restricted'
+        - sourceline: 'deb-src http://archive.ubuntu.com/ubuntu bionic-updates main restricted'
+        - sourceline: 'deb-src http://archive.ubuntu.com/ubuntu bionic-security main restricted'
 
   - os: linux
     arch: arm64
     dist: bionic
+    addons:
+      apt:
+        sources:
+        - sourceline: 'deb-src http://ports.ubuntu.com/ubuntu-ports bionic main restricted'
+        - sourceline: 'deb-src http://ports.ubuntu.com/ubuntu-ports bionic-updates main restricted'
+        - sourceline: 'deb-src http://ports.ubuntu.com/ubuntu-ports bionic-security main restricted'
+
 script:
 - bash ${TRAVIS_BUILD_DIR}/script.sh
 
