@@ -33,4 +33,5 @@ make -j$(nproc)
 make install DESTDIR=${DESTDIR}
 popd
 
+mv *.txt ${INSTALL_DIR}
 tar -zcvf "${INSTALL_DIR}.tar.gz" ${INSTALL_DIR}
