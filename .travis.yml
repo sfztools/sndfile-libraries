@@ -33,4 +33,4 @@ deploy:
     secure: fBcy6UDVxxzhKBDCC+pMz+EjybotaPW/0CmKCvY0sxiJrpNFSXi19CtDtM8lWmXU8u/DJy5x6RHcvEG/bdY7VFuSXhqaMwnOmjQMpRvmIlzoVOXi0riOLaOeqkgdq6ERYBkXuCeB2Tq66WycfEJYkWojk6Xk5ZKSkjy+wuIyBdRmJDCSn+DCt8rX5dLDZ/YaAnsG9VMxf971zysHrrQoIkJlsB6k68SaAVdTAtRU1pJwNLPkZMVPc8LO4rYAdr+7woHKtiCxb5kHZv9SQ7Tkz8Y76AyxBZY7VrtkNhIdJy632JVDJqSRuyUm5vUA0TM4nFeX3lrIg0/6ppDfgT45Z/2DRFX+E/QcUBnT4Wnp7oG8Ogay3NbYrDzQl09WuJ78+YeIv/jP8X0NkyuF7lr2Zsbx7Clk1dMtbAHJBzbRvJBvH0XbYQ8TCbB9wrdBEOgCK+SnDFAkEuDA2qPAWptvVt8CrvDmzs3daDSwydJyi5tGwbR4JAOwikD1KamnbVMEj0UFoBHeXw77OJLZWwEf0Muhl+Ux0PnF6DjIky371TVwIStEzDbXvzg8Fkqg1LtX/5+0OXok2/Ee7tiDviuNWy6EGF1zt3/mtht3kxHdwD4DF8VMxQopFIA3QFY4AMsDKqoWDyNaeTrcOHV/9XW82Nu4PyVKilBD+MAhNFh4F7U=
   file: "${INSTALL_DIR}.tar.gz"
   on:
-    repo: paulfd/sndfile-libraries
+    repo: sfztools/sndfile-libraries
