@@ -2,6 +2,8 @@
 
 set -e
 
+sudo apt-get install libtool-bin
+
 DESTDIR="${PWD}/${INSTALL_DIR}"
 PREFIX="/usr/local"
 FLAGS="-fPIC -DPIC -fvisibility=hidden -I${PREFIX}/include"
