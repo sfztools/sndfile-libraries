@@ -2,7 +2,7 @@
 
 set -e
 
-sudo apt-get install libtool-bin
+sudo apt-get install gettext libtool-bin
 
 DESTDIR="${PWD}/${INSTALL_DIR}"
 PREFIX="/usr/local"
