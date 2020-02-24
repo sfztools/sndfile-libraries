@@ -55,4 +55,5 @@ popd
 
 #rm -rf ${INSTALL_DIR}/${PREFIX}/bin ${INSTALL_DIR}/${PREFIX}/share/doc ${INSTALL_DIR}/${PREFIX}/share/man
 
+mv *.txt ${INSTALL_DIR}
 tar -zcvf "${INSTALL_DIR}.tar.gz" ${INSTALL_DIR}
